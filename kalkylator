@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+int main(void)
+{
+int a,b,c;
+char z;
+cout << "Первое число: ";
+cin >> a;
+cout <<"Действие: ";
+cin >> z;
+cout <<"Второе число: ";
+cin >> b;
+switch (z)
+{
+       case '+':
+{
+       c=a+b;
+cout <<"Ответ: "<< c <<"\a"; 
+
+break;
+}
+      case '-':
+{
+      c=a-b;
+cout <<"Ответ: "<<c;
+break;
+}
+      case '*':
+{
+      c=a*b;
+cout <<"Ответ: "<<c;
+break;
+ }
+       case '/':
+{
+       c=a/b;
+cout <<"Ответ: "<<c;
+break;
+}
+default:
+cout <<"Не верное значение.";        
+}
+system("PAUSE .. void");
+return 0;
+}
